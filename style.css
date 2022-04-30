@@ -1,3 +1,97 @@
-h1 {
-  color: red;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header:before {
+  content: '';
+  position: absolute;
+  width: 200vw;
+  min-height: 50vh;
+  z-index: -1;
+  background: url('./tilt.svg') 0 0 repeat;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  overflow: hidden;
+  transform: rotateY(180deg);
+}
+
+svg {
+  color: #000;
+}
+
+header {
+  min-height: 50vh;
+  display: flex;
+}
+
+.info-container img {
+  box-shadow: 5px 5px 10px 5px rgba(0.1, 0.1, 0.1, 0.4);
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  margin-left: 15vw;
+}
+
+.about h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+.about p {
+  font-family: 'Roboto';
+  color: rgb(104, 103, 103);
+  font-weight: 600;
+  line-height: 23px;
+}
+
+.svg-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.about {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-e;
+  flex-direction: column;
+  min-height: 36vh;
+  max-width: 34vw;
+  box-shadow: 5px 5px 10px 3px rgba(0.1, 0.1, 0.1, 0.2);
+}
+
+.about * {
+  margin-left: 20px;
+}
+
+main {
+  margin: 50px;
+  min-height: 70vh;
+  background-color: lightcoral;
+}
+
+main h1 {
+  font-family: 'Playfair Display';
+}
+
+footer {
+  min-height: 50vh;
+  background-color: lightblue;
+}
+
+.project img {
+  width: 250px;
 }
