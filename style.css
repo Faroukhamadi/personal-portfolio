@@ -73,19 +73,21 @@ header {
   margin-left: 20px;
 }
 
+main h1 {
+  float: left;
+}
+
 main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 50px;
-  margin-left: 230px;
+  /* margin-left: 230px; */
   min-height: 70vh;
 }
 
 main h1 {
   font-family: 'Playfair Display';
-}
-
-footer {
-  min-height: 50vh;
-  background-color: lightblue;
 }
 
 .project img {
@@ -149,4 +151,75 @@ footer {
 
 .proj-head a:hover {
   opacity: 0.7;
+}
+
+footer {
+  min-height: 60vh;
+  margin-top: 100px;
+  background-color: #0389aa;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+
+.contact-info h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 100;
+  font-size: xx-large;
+}
+
+.contact-info p {
+  font-family: 'Roboto';
+  max-width: 320px;
+}
+
+.phone,
+.email {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.svg-footer-container {
+  margin-top: 30px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.svg-footer-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+@media screen and (max-width: 1040px) {
+  main {
+    background-color: pink;
+  }
+  /* TODO: Keep this for mobile */
+  /* .project-container1,
+  .project-container2 {
+    display: inline-block;
+    margin: 0;
+  } */
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    align-items: start;
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    min-height: 80vh;
+    gap: 0px;
+  }
+  .project {
+    margin-bottom: 20px;
+  }
+  .project-container1,
+  .project-container2 {
+    display: block;
+  }
 }
