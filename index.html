@@ -16,10 +16,13 @@
           <p>
             Computer science university student passionate for developing
             scalable, maintainable and accessible web applications and working
-            across the full stack. Looking to continue to grow my skill set
-            while contributing to the positive outcome of making people "richer,
-            smarter and happier."
+            across the full stack. Looking to continue to grow my skill set with
+            a flair for creating elegant solutions in the least
           </p>
+          <span class="only-span">
+            amount of time. Passionate about software architecture and Regular
+            attendee of web developer meetups and hackathons.
+          </span>
           <div class="svg-container">
             <a href="https://github.com/faroukhamadi" target="_blank">
               <svg width="30px" viewBox="0 0 128 128">
@@ -66,8 +69,8 @@
         </div>
       </div>
     </header>
+    <div class="work-div"><h1>My work</h1></div>
     <main>
-      <!-- <h1>My work</h1> -->
       <div class="project-container1">
         <div class="project project1">
           <img src="./odinbook.png" alt="" />
@@ -320,18 +323,21 @@
           </a>
         </div>
       </div>
-      <img
-        src="./footer-portrait.jpg"
-        alt=""
-        style="
-          object-fit: contain;
-          max-width: 60vw;
-          width: 100%;
-          max-height: 60vh;
-          width: 100%;
-          overflow: hidden;
-        "
-      />
+      <picture>
+        <source
+          srcset="./footer-portrait-small.jpg"
+          alt=""
+          class="footer-img-small"
+          media="screen and (min-width: 610px) and (max-width: 1040px)"
+        />
+        <source
+          alt=""
+          srcset="./footer-portrait.jpg"
+          class="footer-img"
+          media="screen and (min-width: 0px) and (max-width: 610px)"
+        />
+        <img src="./footer-portrait.jpg" alt="" class="footer-img" />
+      </picture>
     </footer>
   </body>
 </html>
